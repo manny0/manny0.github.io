@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: xbmc | Manny Liu</title>
+  <title>使用树莓派实现家庭云存储（未填坑） | Manny Liu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Manny Liu">
-<meta property="og:url" content="http://yoursite.com/tags/xbmc/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用树莓派实现家庭云存储（未填坑）">
+<meta property="og:url" content="http://yoursite.com/2014/06/05/nas-with-pi/">
 <meta property="og:site_name" content="Manny Liu">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Manny Liu">
+<meta name="twitter:title" content="使用树莓派实现家庭云存储（未填坑）">
 <meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="Manny Liu" type="application/atom+xml">
@@ -68,12 +68,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-xbmc-on-pi" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-nas-with-pi" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/06/03/xbmc-on-pi/" class="article-date">
-  <time datetime="2014-06-03T13:44:45.000Z" itemprop="datePublished">6月 3 2014</time>
+    <a href="/2014/06/05/nas-with-pi/" class="article-date">
+  <time datetime="2014-06-05T12:50:59.000Z" itemprop="datePublished">6月 5 2014</time>
 </a>
     
   </div>
@@ -83,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/03/xbmc-on-pi/">用树莓派搭建轻量级家庭媒体中心-软件安装</a>
+    <h1 class="article-title" itemprop="name">
+      使用树莓派实现家庭云存储（未填坑）
     </h1>
   
 
@@ -92,26 +90,51 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><h2>&#x5F00;&#x59CB;&#x4E4B;&#x524D;</h2></p><p>&#x6811;&#x8393;&#x6D3E;&#x56E0;&#x5176;&#x72EC;&#x7279;&#x7684;&#x786C;&#x4EF6;&#x67B6;&#x6784;&#xFF0C;&#x867D;&#x7136;&#x4E3B;&#x9891;&#x4E0D;&#x9AD8;&#xFF0C;&#x4F46;&#x5374;&#x53EF;&#x4EE5;&#x786C;&#x89E3;&#x9AD8;&#x6E05;&#x89C6;&#x9891;&#x3002;&#x975E;&#x5E38;&#x9002;&#x5408;&#x7528;&#x4F5C;&#x4F4E;&#x529F;&#x7387;&#x7684;&#x9AD8;&#x6E05;&#x89E3;&#x7801;&#x65B9;&#x6848;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x5BB6;&#x5EAD;&#x5A92;&#x4F53;&#x4E2D;&#x5FC3;&#x3002;&#x4ECA;&#x5929;&#x5C31;&#x6765;&#x5206;&#x4EAB;&#x4E00;&#x4E0B;&#x628A;&#x5C0F;&#x6D3E;&#x6298;&#x817E;&#x6210;&#x5BB6;&#x5EAD;&#x5A92;&#x4F53;&#x4E2D;&#x5FC3;&#x7684;&#x7ECF;&#x5386;&#x3002;XD</p><h2>&#x65B9;&#x6848;&#x9009;&#x62E9;</h2><p>&#x4E86;&#x89E3;&#x5230;&#x7684;&#x6280;&#x672F;&#x65B9;&#x6848;&#x4E3B;&#x8981;&#x6709;&#x4E09;&#x79CD;&#xFF1A;<ul><li>&#x4F7F;&#x7528;&#x522B;&#x4EBA;&#x505A;&#x597D;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5982;OpenELEC&#x3001;RASPBMC&#x3002;&#x955C;&#x50CF;&#x90FD;&#x53EF;&#x4ECE;<a href="http://www.raspberrypi.org/" target="_blank" rel="external">&#x6811;&#x8393;&#x6D3E;&#x4E3B;&#x9875;</a><a href="http://www.raspberrypi.org/downloads/" target="_blank" rel="external">&#x4E0B;&#x8F7D;</a>&#x3002;&#x76F4;&#x63A5;&#x5C06;&#x4E0B;&#x8F7D;&#x7684;&#x955C;&#x50CF;&#x4F7F;&#x7528;Win32DiskImager&#x7B49;&#x5DE5;&#x5177;&#x5199;&#x5165;SD&#x5361;&#x5373;&#x53EF;&#x3002;</li><li>&#x81EA;&#x884C;&#x4E0B;&#x8F7D;XBMC&#x6E90;&#x7801;&#xFF0C;&#x5728;&#x5C0F;&#x6D3E;&#x4E0A;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;&#x3002;&#x4ECB;&#x4E8E;&#x5C0F;&#x6D3E;&#x7684;&#x8FD0;&#x7B97;&#x80FD;&#x529B;&#xFF0C;&#x6B64;&#x79CD;&#x65B9;&#x5F0F;&#x975E;&#x5E38;&#x8017;&#x65F6;&#xFF0C;&#x636E;&#x7F51;&#x4E0A;&#x7684;&#x8BF4;&#x6CD5;&#x5927;&#x7EA6;&#x4E3A;11-12&#x5C0F;&#x65F6;&#x3002;</li><li>&#x4F7F;&#x7528;Rasbian&#x91CC;&#x7684;&#x7EC8;&#x7AEF;&#x5B89;&#x88C5;&#x522B;&#x4EBA;&#x5DF2;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x3002;&#x7531;&#x4E8E;&#x5C0F;&#x6D3E;&#x7684;&#x786C;&#x4EF6;&#x662F;&#x9AD8;&#x5EA6;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x6B64;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x884C;&#xFF0C;&#x4E5F;&#x6BD4;&#x8F83;&#x9002;&#x5408;&#x559C;&#x6B22;&#x5728;&#x7EC8;&#x7AEF;&#x91CC;&#x6298;&#x817E;&#x7684;&#x6211;&#x3002;&#x5C31;&#x662F;&#x4ED6;&#x4E86;&#xFF01;XD</li></ul></p><h2>&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x7684;&#x5B89;&#x88C5;</h2><p>&#x5148;&#x9644;&#x4E0A;<a href="http://wiki.xbmc.org/index.php?title=Raspberry_Pi/FAQ#Installing_XBMC_on_the_Raspberry_Pi" target="_blank" rel="external">XBMC&#x5B98;&#x65B9;&#x5B89;&#x88C5;&#x8BF4;&#x660E;&#x6587;&#x6863;</a>&#x3002;&#x5982;&#x6587;&#x6863;&#x4E2D;&#x63CF;&#x8FF0;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x5230;<a href="http://michael.gorven.za.net/raspberrypi/xbmc" target="_blank" rel="external">&#x8FD9;&#x91CC;</a>&#x67E5;&#x770B;&#x5B89;&#x88C5;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x7684;&#x8BF4;&#x660E;&#x3002;&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x8FD8;&#x662F;&#x6709;&#x70B9;&#x5C0F;&#x590D;&#x6742;&#x7684;&#xFF1A;<ul><li>&#x6DFB;&#x52A0;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x6E90;&#xFF1A;&#x5728;/etc/apt/sources.list.d/mene.list&#x4E2D;&#x6DFB;&#x52A0;<br><code>deb <a href="http://archive.mene.za.net/raspbian" target="_blank" rel="external">http://archive.mene.za.net/raspbian</a> wheezy contrib</code></li><li>&#x6DFB;&#x52A0;&#x6307;&#x7EB9;&#x6807;&#x8BC6;&#xFF1A;<br><code>sudo apt-key adv &#x2014;keyserver keyserver.ubuntu.com &#x2014;recv-key 5243CDED</code></li><li>&#x66F4;&#x65B0;&#x8F6F;&#x4EF6;&#x5305;&#x5217;&#x8868;&#xFF1A;<br><code>sudo apt-get update</code></li><li>OK&#xFF0C;&#x5B89;&#x88C5;XBMC&#xFF01;&#xFF1A;<br><code>sudo apt-get install xbmc</code></li><li>&#x786E;&#x5B9A;&#x4F7F;&#x7528;XBMC&#x7684;&#x7528;&#x6237;&#x5728;&#x4EE5;&#x4E0B;&#x7528;&#x6237;&#x7EC4;&#x4E2D;&#xFF1A;<br><code>audio video input dialout plugdev tty</code></li><li>&#x82E5;&#x67D0;&#x7528;&#x6237;&#x7EC4;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x521B;&#x5EFA;&#x3002;&#x5982;input&#x7EC4;&#xFF1A;<br><code>addgroup &#x2014;system input</code></li></ul></p><p>OK! &#x5927;&#x529F;&#x544A;&#x6210;&#xFF0C;&#x5728;&#x7EC8;&#x7AEF;&#x91CC;&#x952E;&#x5165;XBMC&#x8BD5;&#x8BD5;&#x5427;&#xFF01;P.S.&#x5728;SSH&#x548C;VNC&#x4E2D;&#x662F;&#x770B;&#x4E0D;&#x5230;&#x754C;&#x9762;&#x7684;&#xFF0C;&#x8FD8;&#x662F;&#x627E;&#x6839;HDMI&#x7EBF;&#x5427;&#x3002;</p><h2>&#x603B;&#x7ED3;</h2><p>&#x81F3;&#x6B64;&#xFF0C;&#x8F6F;&#x4EF6;&#x7684;&#x5B89;&#x88C5;&#x662F;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;XBMC&#x914D;&#x7F6E;&#x540E;&#x7EED;&#x518D;&#x8865;&#x5145;&#x5427;&#x3002;</p><p></p>
-
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/06/03/xbmc-on-pi/" data-id="s55nmmglndwuc03a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/06/05/nas-with-pi/" data-id="96hequ44vjg0kcsx" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Raspberry-Pi/">Raspberry Pi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xbmc/">xbmc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树莓派/">树莓派</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nas/">nas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树莓派/">树莓派</a></li></ul>
 
     </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2014/06/03/xbmc-on-pi/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">用树莓派搭建轻量级家庭媒体中心-软件安装</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
 
 
-  
-  
+<section id="comments">
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"sunnyxx"};
+        (function() {
+          var ds = document.createElement('script');
+          ds.type = 'text/javascript';ds.async = true;
+          ds.src = 'http://static.duoshuo.com/embed.js';
+          ds.charset = 'UTF-8';
+          (document.getElementsByTagName('head')[0]
+          || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+  </script>
+<!-- Duoshuo Comment END -->
+</section>
 </section>
         
           <aside id="sidebar">
